@@ -25,7 +25,7 @@
 
   /* Layout */
   --container-max: 1360px;
-  --nav-h: 96px;
+  --nav-h: 74px;
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -97,55 +97,52 @@ ul, ol {
 }
 
 /* ============================================================
-   BRAND IDENTITY STYLING (LOGOMARK & WORDMARK)
+   BRAND IDENTITY STYLING (DISCREET LUXURY STUDIO LOCKUP)
    ============================================================ */
 .logo {
-  display: inline-flex;
-  flex-direction: column;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 4px;
+  gap: 9px;
   text-decoration: none;
-}
-
-.brand-logomark {
-  height: 44px;
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
-  transition: transform var(--transition-base);
-}
-
-.brand-wordmark {
-  height: 26px;
-  width: auto;
-  max-width: 220px;
-  object-fit: contain;
-  filter: brightness(1.2) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  opacity: 0.95;
   transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
-.logo:hover .brand-logomark {
-  transform: translateY(-2px) scale(1.05);
+.brand-logomark {
+  height: 18px;
+  width: auto;
+  object-fit: contain;
+  background: transparent;
+  transition: transform var(--transition-fast);
 }
 
-.logo:hover .brand-wordmark {
-  opacity: 0.95;
+.brand-wordmark {
+  height: 14px;
+  width: auto;
+  max-width: 135px;
+  object-fit: contain;
+  filter: brightness(1.15);
+  background: transparent;
+  transition: opacity var(--transition-fast);
+}
+
+.logo:hover {
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .logo-mobile-group {
-  display: inline-flex;
-  flex-direction: column;
+  display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 8px;
 }
 
 .logo-mobile-group .brand-logomark {
-  height: 36px;
+  height: 18px;
 }
 
 .logo-mobile-group .brand-wordmark {
-  height: 22px;
+  height: 14px;
 }
 
 /* Footer Brand */
