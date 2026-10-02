@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RENOVONIX — Spaces, Reimagined | Premium Interior Renovation</title>
+    <meta name="description"
+        content="RENOVONIX is a premium interior renovation and transformation studio for homes, workspaces, and luxury living. Discover architectural craftsmanship tailored to how you live." />
+    <meta name="keywords"
+        content="interior renovation, luxury architecture, kitchen renovation, bathroom renovation, living space redesign, bedroom interior, workspace renovation, Hyderabad interior studio" />
+    <meta property="og:title" content="RENOVONIX — Spaces, Reimagined" />
+    <meta property="og:description"
+        content="Interior renovation and transformation for homes, workspaces and everything in between." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/hero_interior_4k.jpg" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Cormorant / Syne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome for clean minimal vector icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== GLOBAL NAVIGATION ===== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="logo-link" aria-label="RENOVONIX Homepage">
+                <img src="brand_images/logomark_transparent.png" alt="RENOVONIX Flow Logomark" class="brand-logomark" />
+                <img src="brand_images/wordmark_transparent.png" alt="RENOVONIX" class="brand-wordmark" />
+            </a>
+
+            <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main Navigation">
+                <a href="#transform" class="nav-link" id="nav-projects">Projects</a>
+                <a href="#services" class="nav-link" id="nav-services">Services</a>
+                <a href="#approach" class="nav-link" id="nav-process">Process</a>
+                <a href="#materials" class="nav-link" id="nav-materials">Materials</a>
+                <a href="#about" class="nav-link" id="nav-about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav" id="nav-cta-btn" onclick="openProjectModal(event)">
+                    <span>Start a Project</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+            <div class="mobile-nav-header">
+                <div class="logo-mobile-group">
+                    <img src="brand_images/logomark_transparent.png" alt="RENOVONIX Logomark" class="brand-logomark" />
+                    <img src="brand_images/wordmark_transparent.png" alt="RENOVONIX" class="brand-wordmark" />
+                </div>
+                <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close navigation">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav-list">
+                <a href="#home" class="mobile-nav-item" id="mob-home">Home</a>
+                <a href="#transform" class="mobile-nav-item" id="mob-transform">What We Transform</a>
+                <a href="#before-after" class="mobile-nav-item" id="mob-before-after">Before → After</a>
+                <a href="#projects" class="mobile-nav-item" id="mob-projects">Featured Projects</a>
+                <a href="#services" class="mobile-nav-item" id="mob-services">Our Services</a>
+                <a href="#approach" class="mobile-nav-item" id="mob-process">Our Process</a>
+                <a href="#materials" class="mobile-nav-item" id="mob-materials">Materials &amp; Craft</a>
+                <a href="#testimonials" class="mobile-nav-item" id="mob-testimonials">Client Stories</a>
+            </nav>
+            <div class="mobile-nav-footer">
+                <a href="#contact" class="btn btn-primary btn-full" id="mob-start-btn" onclick="openProjectModal(event)">
+                    <span>Start a Project</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <div class="mobile-contact-info">
+                    <a href="tel:+919652680012">+91 96526 80012</a>
+                    <a href="mailto:renovonixinteriors@gmail.com">renovonixinteriors@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ===== SECTION 01 — HERO (4K PREMIUM QUALITY INTERIOR IMAGE) ===== -->
+        <section class="hero" id="home">
+            <div class="hero-bg-wrapper">
+                <img src="images/hero_interior_4k.jpg" alt="4K Luxury Architectural Interior Renovation by RENOVONIX"
+                    class="hero-img" id="hero-bg-image" />
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-label-track">
+                        <span class="hero-label">INTERIORS &middot; RENOVATIONS &middot; SPACES</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Spaces,<br />
+                        <span class="hero-title-italic">reimagined.</span>
+                    </h1>
+
+                    <p class="hero-desc">
+                        Interior renovation and transformation for homes, workspaces and everything in between.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-hero" id="hero-explore-btn">
+                            <span>Explore Our Work</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-meta-footer">
+                    <a href="#transform" class="hero-scroll-btn" id="hero-scroll-btn">
+                        <span>SCROLL TO EXPLORE</span>
+                        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="hero-tagline-right">
+                        <span>MODERN INTERIORS &middot; TIMELESS SPACES &middot; ELEVATED LIVING</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 02 — WHAT WE TRANSFORM (/01) ===== -->
+        <section class="section section-dark transform-section" id="transform">
+            <div class="container">
+                <div class="section-top-bar">
+                    <div class="section-index-group">
+                        <span class="section-num">/01</span>
+                        <h2 class="section-heading-dark">What We Transform</h2>
+                    </div>
+                    <a href="#services" class="section-link-action" id="transform-view-all">
+                        <span>View All Services</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="transform-gallery" id="transform-gallery">
+                    <!-- 01 Kitchen -->
+                    <article class="transform-card" id="cat-kitchen" onclick="openServiceDetail('kitchen')">
+                        <div class="transform-img-box">
+                            <img src="images/kitchen_renovation.png" alt="Kitchen Renovation and Transformation"
+                                loading="lazy" />
+                            <div class="transform-overlay"></div>
+                        </div>
+                        <div class="transform-card-info">
+                            <div class="transform-card-meta">
+                                <span class="card-num">01</span>
+                                <h3 class="card-title">Kitchen</h3>
+                            </div>
+                            <span class="card-arrow-circle" aria-label="Explore Kitchen">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- 02 Bathroom -->
+                    <article class="transform-card" id="cat-bathroom" onclick="openServiceDetail('bathroom')">
+                        <div class="transform-img-box">
+                            <img src="images/bathroom_renovation.png" alt="Spa Bathroom Renovation" loading="lazy" />
+                            <div class="transform-overlay"></div>
+                        </div>
+                        <div class="transform-card-info">
+                            <div class="transform-card-meta">
+                                <span class="card-num">02</span>
+                                <h3 class="card-title">Bathroom</h3>
+                            </div>
+                            <span class="card-arrow-circle" aria-label="Explore Bathroom">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- 03 Living -->
+                    <article class="transform-card" id="cat-living" onclick="openServiceDetail('living')">
+                        <div class="transform-img-box">
+                            <img src="images/living_room_renovation.png" alt="Living Spaces Architecture"
+                                loading="lazy" />
+                            <div class="transform-overlay"></div>
+                        </div>
+                        <div class="transform-card-info">
+                            <div class="transform-card-meta">
+                                <span class="card-num">03</span>
+                                <h3 class="card-title">Living</h3>
+                            </div>
+                            <span class="card-arrow-circle" aria-label="Explore Living">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- 04 Bedroom -->
+                    <article class="transform-card" id="cat-bedroom" onclick="openServiceDetail('bedroom')">
+                        <div class="transform-img-box">
+                            <img src="images/bedroom_renovation.png" alt="Luxury Bedroom Sanctuary" loading="lazy" />
+                            <div class="transform-overlay"></div>
+                        </div>
+                        <div class="transform-card-info">
+                            <div class="transform-card-meta">
+                                <span class="card-num">04</span>
+                                <h3 class="card-title">Bedroom</h3>
+                            </div>
+                            <span class="card-arrow-circle" aria-label="Explore Bedroom">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- 05 Workspace -->
+                    <article class="transform-card" id="cat-workspace" onclick="openServiceDetail('workspace')">
+                        <div class="transform-img-box">
+                            <img src="images/office_renovation.png" alt="Executive Workspace Design" loading="lazy" />
+                            <div class="transform-overlay"></div>
+                        </div>
+                        <div class="transform-card-info">
+                            <div class="transform-card-meta">
+                                <span class="card-num">05</span>
+                                <h3 class="card-title">Workspace</h3>
+                            </div>
+                            <span class="card-arrow-circle" aria-label="Explore Workspace">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- 06 Renovation -->
+                    <article class="transform-card" id="cat-renovation" onclick="openServiceDetail('renovation')">
+                        <div class="transform-img-box">
+                            <img src="images/dining_renovation.png" alt="Complete Home Transformation &amp; Repair"
+                                loading="lazy" />
+                            <div class="transform-overlay"></div>
+                        </div>
+                        <div class="transform-card-info">
+                            <div class="transform-card-meta">
+                                <span class="card-num">06</span>
+                                <h3 class="card-title">Renovation</h3>
+                            </div>
+                            <span class="card-arrow-circle" aria-label="Explore Renovation">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 03 — BEFORE → AFTER (/02) ===== -->
+        <section class="section section-light before-after-section" id="before-after">
+            <div class="container">
+                <div class="section-top-bar">
+                    <div class="section-index-group">
+                        <span class="section-num text-muted">/02</span>
+                        <h2 class="section-heading-light">Before → After</h2>
+                    </div>
+                    <p class="section-lead-statement">
+                        From an outdated kitchen to a space designed around how you actually live.
+                    </p>
+                </div>
+
+                <!-- Interactive Comparison Module -->
+                <div class="ba-comparator-container" id="ba-container">
+                    <div class="ba-image-wrapper">
+                        <!-- Before image (grayscale/aged) -->
+                        <img src="images/kitchen_before.jpg" alt="Kitchen Before Renovation" class="ba-img ba-img-before" />
+                        <span class="ba-tag ba-tag-before">BEFORE</span>
+
+                        <!-- After image (clipped) -->
+                        <div class="ba-after-clip" id="ba-after-clip">
+                            <img src="images/kitchen_after.jpg" alt="Kitchen After Renovation by RENOVONIX"
+                                class="ba-img ba-img-after" />
+                            <span class="ba-tag ba-tag-after">AFTER</span>
+                        </div>
+
+                        <!-- Draggable Divider Handle -->
+                        <div class="ba-handle" id="ba-handle" role="slider" aria-label="Before and After Comparison"
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                            <div class="ba-handle-line"></div>
+                            <div class="ba-handle-circle">
+                                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="ba-handle-line"></div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Metadata & Switcher -->
+                    <div class="ba-meta-bar">
+                        <div class="ba-meta-left">
+                            <span class="ba-scope-label" id="ba-scope-title">KITCHEN RENOVATION</span>
+                            <span class="ba-location-dot">&middot;</span>
+                            <span class="ba-location-label" id="ba-scope-loc">HYDERABAD</span>
+                        </div>
+
+                        <div class="ba-nav-controls">
+                            <button class="ba-nav-arrow" id="ba-prev-btn" aria-label="Previous Transformation Project">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <span class="ba-page-counter" id="ba-counter">01 / 04</span>
+                            <button class="ba-nav-arrow" id="ba-next-btn" aria-label="Next Transformation Project">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 04 — THE RENOVONIX APPROACH (/03) ===== -->
+        <section class="section section-dark approach-section" id="approach">
+            <!-- Subtle Architectural Background Watermark Motif using the Official Flowing Logomark -->
+            <div class="brand-watermark-bg" aria-hidden="true">
+                <img src="brand_images/logomark_transparent.png" alt="RENOVONIX Flow Watermark" class="brand-watermark-img" />
+            </div>
+
+            <div class="container position-relative">
+                <div class="section-top-bar">
+                    <div class="section-index-group">
+                        <span class="section-num">/03</span>
+                        <span class="section-sub-label">The Renovonix Approach</span>
+                    </div>
+                </div>
+
+                <div class="approach-hero-statement">
+                    <h2 class="approach-statement-title">
+                        We don't just renovate spaces.<br />
+                        We rethink how they work.
+                    </h2>
+                </div>
+
+                <div class="approach-steps-grid">
+                    <!-- Step 01 -->
+                    <div class="approach-step-card">
+                        <div class="step-header">
+                            <span class="step-num">01</span>
+                            <span class="step-conn-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                        <h3 class="step-name">Discover</h3>
+                        <p class="step-desc">
+                            Understand the space, your lifestyle, functional needs and spatial possibilities.
+                        </p>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="approach-step-card">
+                        <div class="step-header">
+                            <span class="step-num">02</span>
+                            <span class="step-conn-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                        <h3 class="step-name">Design</h3>
+                        <p class="step-desc">
+                            Plan every detail with architectural function, ergonomics and enduring aesthetics.
+                        </p>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="approach-step-card">
+                        <div class="step-header">
+                            <span class="step-num">03</span>
+                            <span class="step-conn-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                        <h3 class="step-name">Transform</h3>
+                        <p class="step-desc">
+                            Execute with master craftsmanship, dedicated supervision and unyielding quality.
+                        </p>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="approach-step-card">
+                        <div class="step-header">
+                            <span class="step-num">04</span>
+                        </div>
+                        <h3 class="step-name">Reveal</h3>
+                        <p class="step-desc">
+                            Deliver a space you'll love, built to last and tailored to the way you live.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 05 — FEATURED PROJECTS (/04) ===== -->
+        <section class="section section-dark projects-section" id="projects">
+            <div class="container">
+                <div class="section-top-bar">
+                    <div class="section-index-group">
+                        <span class="section-num">/04</span>
+                        <h2 class="section-heading-dark">Featured Projects</h2>
+                    </div>
+                    <a href="#contact" class="section-link-action" onclick="openProjectModal(event)">
+                        <span>View All Projects</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="projects-editorial-grid">
+                    <!-- Project 01 — Modern Apartment -->
+                    <article class="project-editorial-card project-card-primary"
+                        onclick="openCaseStudy('apartment')">
+                        <div class="project-img-container">
+                            <img src="images/project_apartment.jpg"
+                                alt="Modern Apartment Renovation in Hyderabad by RENOVONIX" loading="lazy" />
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-meta-strip">
+                            <div class="project-meta-info">
+                                <div class="project-title-row">
+                                    <span class="proj-num">01</span>
+                                    <h3 class="proj-title">Modern Apartment</h3>
+                                </div>
+                                <p class="proj-sub">3 BHK Renovation &middot; Hyderabad</p>
+                            </div>
+                            <span class="proj-arrow-circle" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Project 02 — Urban Villa -->
+                    <article class="project-editorial-card project-card-secondary"
+                        onclick="openCaseStudy('villa')">
+                        <div class="project-img-container">
+                            <img src="images/project_villa.jpg"
+                                alt="Urban Villa Architecture &amp; Renovation in Hyderabad" loading="lazy" />
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-meta-strip">
+                            <div class="project-meta-info">
+                                <div class="project-title-row">
+                                    <span class="proj-num">02</span>
+                                    <h3 class="proj-title">Urban Villa</h3>
+                                </div>
+                                <p class="proj-sub">4 BHK Renovation &middot; Hyderabad</p>
+                            </div>
+                            <span class="proj-arrow-circle" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 06 — OUR SERVICES (/05) ===== -->
+        <section class="section section-light services-editorial-section" id="services">
+            <div class="container">
+                <div class="services-editorial-layout">
+                    <!-- Left Column -->
+                    <div class="services-left-col">
+                        <div class="section-index-group">
+                            <span class="section-num text-muted">/05</span>
+                            <h2 class="section-heading-light">Our Services</h2>
+                        </div>
+                        <p class="services-editorial-desc">
+                            End-to-end interior renovation solutions tailored to your space and lifestyle.
+                        </p>
+                        <div class="services-action-wrap">
+                            <a href="#contact" class="btn btn-dark" onclick="openProjectModal(event)">
+                                <span>Discuss Your Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Accordion Rows -->
+                    <div class="services-right-col">
+                        <div class="services-header-link">
+                            <a href="#contact" onclick="openProjectModal(event)" class="explore-all-link">
+                                <span>Explore All Services</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="services-accordion-list" id="services-accordion">
+                            <!-- Service 01: Kitchen -->
+                            <div class="service-acc-row active" data-service="kitchen">
+                                <button class="service-acc-header" aria-expanded="true">
+                                    <span class="service-row-title">Kitchen Renovation</span>
+                                    <span class="service-acc-icon"><i class="fa-solid fa-minus"></i></span>
+                                </button>
+                                <div class="service-acc-body">
+                                    <p class="service-acc-desc">
+                                        Modular cabinetry, quartz countertops, ergonomic zoning, integrated appliances,
+                                        and concealed plumbing built for effortless living.
+                                    </p>
+                                    <div class="service-acc-meta">
+                                        <span>Scope: Modular Kitchen &middot; Island &middot; Plumbing &middot; Lighting</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 02: Bathroom -->
+                            <div class="service-acc-row" data-service="bathroom">
+                                <button class="service-acc-header" aria-expanded="false">
+                                    <span class="service-row-title">Bathroom Renovation</span>
+                                    <span class="service-acc-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="service-acc-body">
+                                    <p class="service-acc-desc">
+                                        Spa-inspired aesthetics, microcement walls, frameless glass enclosures, concealed
+                                        fittings, and complete multi-layer waterproofing.
+                                    </p>
+                                    <div class="service-acc-meta">
+                                        <span>Scope: Tiling &middot; Sanware &middot; Waterproofing &middot; Vanity</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 03: Living -->
+                            <div class="service-acc-row" data-service="living">
+                                <button class="service-acc-header" aria-expanded="false">
+                                    <span class="service-row-title">Living Spaces</span>
+                                    <span class="service-acc-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="service-acc-body">
+                                    <p class="service-acc-desc">
+                                        Open-concept spatial redesign, architectural false ceilings, fluted timber
+                                        panelling, ambient layered lighting and bespoke media consoles.
+                                    </p>
+                                    <div class="service-acc-meta">
+                                        <span>Scope: Spatial Planning &middot; Wall Panelling &middot; Lighting &middot; Finishes</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 04: Bedroom -->
+                            <div class="service-acc-row" data-service="bedroom">
+                                <button class="service-acc-header" aria-expanded="false">
+                                    <span class="service-row-title">Bedroom Interiors</span>
+                                    <span class="service-acc-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="service-acc-body">
+                                    <p class="service-acc-desc">
+                                        Floor-to-ceiling floor-mount wardrobes, custom upholstered headboards, acoustic
+                                        wall panelling, and calm restorative color palettes.
+                                    </p>
+                                    <div class="service-acc-meta">
+                                        <span>Scope: Wardrobes &middot; Master Suite &middot; Bed Backdrops &middot; Mood Lighting</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 05: Workspace -->
+                            <div class="service-acc-row" data-service="workspace">
+                                <button class="service-acc-header" aria-expanded="false">
+                                    <span class="service-row-title">Office &amp; Workspaces</span>
+                                    <span class="service-acc-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="service-acc-body">
+                                    <p class="service-acc-desc">
+                                        Clean executive studies and creative studio spaces designed for focus, seamless
+                                        wire management, ergonomic desks and acoustic comfort.
+                                    </p>
+                                    <div class="service-acc-meta">
+                                        <span>Scope: Home Office &middot; Commercial Fitout &middot; Storage &middot; Acoustics</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 06: Repair -->
+                            <div class="service-acc-row" data-service="repair">
+                                <button class="service-acc-header" aria-expanded="false">
+                                    <span class="service-row-title">Repair &amp; Renovation</span>
+                                    <span class="service-acc-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="service-acc-body">
+                                    <p class="service-acc-desc">
+                                        Structural wall restoration, deep moisture treatment, ceiling repairs, marble
+                                        polishing, plumbing overhauls, and complete paint refinishing.
+                                    </p>
+                                    <div class="service-acc-meta">
+                                        <span>Scope: Damp Proofing &middot; False Ceiling &middot; Electrical &middot; Restoration</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 07 — MATERIALS & CRAFTSMANSHIP (/06) ===== -->
+        <section class="section section-dark materials-section" id="materials">
+            <div class="container">
+                <div class="section-top-bar">
+                    <div class="section-index-group">
+                        <span class="section-num">/06</span>
+                        <h2 class="section-heading-dark">Materials &amp; Craftsmanship</h2>
+                    </div>
+                    <a href="#approach" class="section-link-action">
+                        <span>Our Process</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="materials-scroll-track" id="materials-track">
+                    <!-- Material 1: Wood -->
+                    <div class="material-panel">
+                        <div class="material-img-wrap">
+                            <img src="images/mat_wood.jpg" alt="Natural Oak and Walnut Wood Panelling" loading="lazy" />
+                        </div>
+                        <span class="material-label">Wood</span>
+                    </div>
+
+                    <!-- Material 2: Stone -->
+                    <div class="material-panel">
+                        <div class="material-img-wrap">
+                            <img src="images/mat_stone.jpg" alt="Textured Travertine and Natural Stone" loading="lazy" />
+                        </div>
+                        <span class="material-label">Stone</span>
+                    </div>
+
+                    <!-- Material 3: Marble -->
+                    <div class="material-panel">
+                        <div class="material-img-wrap">
+                            <img src="images/mat_marble.jpg" alt="Italian Calacatta and Statuario Marble" loading="lazy" />
+                        </div>
+                        <span class="material-label">Marble</span>
+                    </div>
+
+                    <!-- Material 4: Metal -->
+                    <div class="material-panel">
+                        <div class="material-img-wrap">
+                            <img src="images/mat_metal.jpg" alt="Brushed Brass and Bronze Metal Accents" loading="lazy" />
+                        </div>
+                        <span class="material-label">Metal</span>
+                    </div>
+
+                    <!-- Material 5: Glass -->
+                    <div class="material-panel">
+                        <div class="material-img-wrap">
+                            <img src="images/mat_glass.jpg" alt="Fluted and Reeded Architectural Glass" loading="lazy" />
+                        </div>
+                        <span class="material-label">Glass</span>
+                    </div>
+
+                    <!-- Material 6: Finishes -->
+                    <div class="material-panel">
+                        <div class="material-img-wrap">
+                            <img src="images/mat_finish.jpg" alt="Textured Plaster and Boucle Finishes" loading="lazy" />
+                        </div>
+                        <span class="material-label">Finishes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 08 — TRUST / STATS (/07) ===== -->
+        <section class="section section-light stats-editorial-section" id="about">
+            <div class="container">
+                <div class="section-top-bar">
+                    <div class="section-index-group">
+                        <span class="section-num text-muted">/07</span>
+                        <h2 class="section-heading-light">Trusted by Homeowners</h2>
+                    </div>
+                    <a href="#testimonials" class="section-link-action text-dark">
+                        <span>Real Stories</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="stats-editorial-grid">
+                    <div class="stat-editorial-card">
+                        <div class="stat-number-val">50+</div>
+                        <p class="stat-caption">Spaces transformed</p>
+                    </div>
+                    <div class="stat-editorial-card">
+                        <div class="stat-number-val">100%</div>
+                        <p class="stat-caption">Project supervision</p>
+                    </div>
+                    <div class="stat-editorial-card">
+                        <div class="stat-number-val">12+</div>
+                        <p class="stat-caption">Years of experience</p>
+                    </div>
+                    <div class="stat-editorial-card">
+                        <div class="stat-number-val">01</div>
+                        <p class="stat-caption">Dedicated renovation team</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 09 — TESTIMONIALS (/08) ===== -->
+        <section class="section section-light testimonials-editorial-section" id="testimonials">
+            <div class="container">
+                <div class="testimonial-editorial-box">
+                    <div class="testi-top-bar">
+                        <div class="section-index-group">
+                            <span class="section-num text-muted">/08</span>
+                            <span class="section-sub-label text-dark">What Our Clients Say</span>
+                        </div>
+                        <div class="testi-arrows">
+                            <button class="testi-arrow-btn" id="testi-prev-btn" aria-label="Previous client story">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="testi-arrow-btn" id="testi-next-btn" aria-label="Next client story">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="testi-content-split">
+                        <div class="testi-quote-side">
+                            <blockquote class="testi-lead-quote" id="testi-quote-text">
+                                &ldquo;The entire space feels completely different.&rdquo;
+                            </blockquote>
+
+                            <div class="testi-author-meta">
+                                <div class="testi-author-avatar">
+                                    <img src="images/avatar_priya.jpg" alt="Client Priya S." id="testi-avatar-img" />
+                                </div>
+                                <div class="testi-author-text">
+                                    <strong id="testi-author-name">Priya S.</strong>
+                                    <span id="testi-author-sub">3 BHK &middot; Kitchen + Living &middot; Hyderabad</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testi-project-side">
+                            <img src="images/testi_project.jpg" alt="Completed Transformation for Client"
+                                id="testi-project-img" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 10 — FINAL CTA (/09) ===== -->
+        <section class="section section-dark final-cta-section" id="contact">
+            <!-- Subtle Architectural Background Watermark Motif -->
+            <div class="brand-watermark-bg" aria-hidden="true">
+                <img src="brand_images/logomark_transparent.png" alt="RENOVONIX Flow Watermark" class="brand-watermark-img" />
+            </div>
+
+            <div class="container position-relative">
+                <div class="final-cta-grid">
+                    <div class="final-cta-left">
+                        <span class="section-num">/09</span>
+                        <h2 class="final-cta-title">
+                            Ready to transform<br />
+                            your space?
+                        </h2>
+                        <p class="final-cta-desc">
+                            Let's create a space that feels like you.
+                        </p>
+                        <div class="final-cta-actions">
+                            <button class="btn btn-hero" id="final-start-btn" onclick="openProjectModal(event)">
+                                <span>Start a Project</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="final-cta-right">
+                        <div class="contact-info-list">
+                            <a href="tel:+919652680012" class="contact-direct-link" id="contact-phone-link">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+91 96526 80012</span>
+                            </a>
+                            <a href="mailto:renovonixinteriors@gmail.com" class="contact-direct-link" id="contact-mail-link">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>renovonixinteriors@gmail.com</span>
+                            </a>
+                            <div class="contact-direct-link">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Hyderabad, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main-row">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-wrap">
+                        <img src="brand_images/logomark_transparent.png" alt="RENOVONIX Logomark" class="footer-logomark" />
+                        <img src="brand_images/wordmark_transparent.png" alt="RENOVONIX Wordmark" class="footer-wordmark" />
+                    </div>
+                    <p class="footer-tagline">Spaces, reimagined.</p>
+                </div>
+
+                <div class="footer-links-col">
+                    <a href="#transform">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="#approach">Process</a>
+                    <a href="#about">About</a>
+                    <a href="#contact" onclick="openProjectModal(event)">Contact</a>
+                </div>
+
+                <div class="footer-social-col">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 RENOVONIX. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== INTERACTIVE "START A PROJECT" INQUIRY MODAL (WITH FORMSPREE INTEGRATION) ===== -->
+    <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="modal-title">
+        <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+        <div class="modal-dialog">
+            <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close form">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-body">
+                <!-- Form View -->
+                <div class="inquiry-form-wrap" id="inquiry-form-wrap">
+                    <div class="modal-emblem-row">
+                        <img src="brand_images/logomark_transparent.png" alt="RENOVONIX Emblem" class="modal-emblem-img" />
+                    </div>
+                    <span class="modal-label">PROJECT INQUIRY</span>
+                    <h2 class="modal-title" id="modal-title">Tell us about your space.</h2>
+                    <p class="modal-sub">
+                        Share your vision with our architectural team. We'll review your requirements and schedule an in-depth consultation.
+                    </p>
+
+                    <form class="inquiry-form" id="contact-form" action="https://formspree.io/f/xbglvezk" method="POST"
+                        novalidate>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="form-name">Full Name *</label>
+                                <input type="text" id="form-name" name="name" placeholder="Ananya Verma" required />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="form-phone">Phone Number *</label>
+                                <input type="tel" id="form-phone" name="phone" placeholder="+91 98765 43210" required />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="form-email">Email Address *</label>
+                                <input type="email" id="form-email" name="email" placeholder="ananya@example.com" required />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="form-location">Project Location</label>
+                                <input type="text" id="form-location" name="location" placeholder="Jubilee Hills, Hyderabad" />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="form-property">Property Type</label>
+                                <select id="form-property" name="property_type">
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Villa">Villa / Independent House</option>
+                                    <option value="Office">Office / Studio</option>
+                                    <option value="Commercial">Commercial Space</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="form-project-type">Project Scope</label>
+                                <select id="form-project-type" name="project_type">
+                                    <option value="Complete Home Transformation">Complete Home Transformation</option>
+                                    <option value="Kitchen Renovation">Kitchen Renovation</option>
+                                    <option value="Bathroom Renovation">Bathroom Renovation</option>
+                                    <option value="Living Spaces">Living Spaces</option>
+                                    <option value="Bedroom Interiors">Bedroom Interiors</option>
+                                    <option value="Workspace / Office">Workspace / Office</option>
+                                    <option value="Repair & Restoration">Repair &amp; Restoration</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="form-area">Approximate Area (Sq. Ft)</label>
+                                <input type="text" id="form-area" name="approx_area" placeholder="e.g. 1,800 sq ft" />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="form-timeline">Preferred Timeline</label>
+                                <select id="form-timeline" name="timeline">
+                                    <option value="Immediately (Within 1 month)">Immediately (Within 1 month)</option>
+                                    <option value="1–3 months">1–3 months</option>
+                                    <option value="3–6 months">3–6 months</option>
+                                    <option value="Planning phase">Planning phase</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="form-message">Tell us about your project</label>
+                            <textarea id="form-message" name="message" rows="3"
+                                placeholder="Describe your space, current layout, pain points, or any architectural references..."></textarea>
+                        </div>
+
+                        <!-- Anti-spam honeypot -->
+                        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
+
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                <span class="btn-text">Start the Conversation</span>
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                            <p class="form-disclaimer">
+                                We respect your privacy. No spam or third-party sharing.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Success Confirmation View -->
+                <div class="inquiry-success-wrap" id="form-success" style="display: none;">
+                    <div class="success-icon-badge">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="success-title">Thank you.</h3>
+                    <p class="success-desc">
+                        We have received your project details. Our senior design team will review your specifications and reach out within 24 hours.
+                    </p>
+                    <button class="btn btn-dark" onclick="closeProjectModal()">
+                        <span>Back to Website</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CASE STUDY / SERVICE DETAIL MODAL ===== -->
+    <div class="case-study-modal" id="case-study-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-backdrop" onclick="closeCaseStudy()"></div>
+        <div class="case-study-dialog">
+            <button class="modal-close-btn" onclick="closeCaseStudy()" aria-label="Close Case Study">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="case-study-content" id="case-study-body">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
