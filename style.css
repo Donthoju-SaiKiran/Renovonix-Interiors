@@ -559,15 +559,18 @@ ul, ol {
 }
 
 .hero-brand-logo-wrap {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .hero-primary-logo {
-  height: clamp(68px, 10vw, 110px);
-  width: auto;
-  max-width: 280px;
+  width: clamp(200px, 28vw, 360px);
+  height: auto;
+  max-width: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.6));
+  transition: transform var(--transition-base);
 }
 
 .hero-label-track {
