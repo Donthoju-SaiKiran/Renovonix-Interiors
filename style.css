@@ -25,7 +25,7 @@
 
   /* Layout */
   --container-max: 1360px;
-  --nav-h: 80px;
+  --nav-h: 96px;
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -100,32 +100,52 @@ ul, ol {
    BRAND IDENTITY STYLING (LOGOMARK & WORDMARK)
    ============================================================ */
 .logo {
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 4px;
   text-decoration: none;
 }
 
-.brand-wordmark {
-  height: 22px;
+.brand-logomark {
+  height: 44px;
   width: auto;
-  max-width: 180px;
   object-fit: contain;
-  filter: brightness(1.15);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  transition: transform var(--transition-base);
+}
+
+.brand-wordmark {
+  height: 26px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  filter: brightness(1.2) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
   transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
+.logo:hover .brand-logomark {
+  transform: translateY(-2px) scale(1.05);
+}
+
 .logo:hover .brand-wordmark {
-  opacity: 0.9;
-  transform: translateY(-1px);
+  opacity: 0.95;
 }
 
 .logo-mobile-group {
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
+  gap: 3px;
+}
+
+.logo-mobile-group .brand-logomark {
+  height: 36px;
 }
 
 .logo-mobile-group .brand-wordmark {
-  height: 19px;
+  height: 22px;
 }
 
 /* Footer Brand */
